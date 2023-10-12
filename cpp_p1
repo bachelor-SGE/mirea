@@ -1,0 +1,54 @@
+#include <iostream>
+#include <windows.h>
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    SetConsoleCP(1251); // Ввод с консоли в кодировке 1251
+    SetConsoleOutputCP(1251);
+    
+    string brand1 = "Oracle";
+    string brand2 = "IBM";
+    string brand3 = "Microsoft";
+    int count1 = 1;
+    int count2 = 1;
+    int count3 = 1;
+    unsigned long sale1 = 2488000000;
+    unsigned long sale2 = 2392000000;
+    unsigned long sale3 = 1048000000;
+    float part1 = 31.1;
+    float part2 = 29.9;
+    float part3 = 13.1;
+
+    int wigth = 80;
+
+    printf("\n");
+    for (int i = 0; i < wigth; i++)
+        printf("-");
+    printf("\n| Фирмы - производители СКБД                                                  |\n");
+    for (int i = 0; i < wigth; i++)
+        printf("-");
+    printf("\n| Фирма | Количество продуктов | Годовой обьем продажи($) |   Часть рынка     |\n");
+    for (int i = 0; i < wigth; i++)
+        printf("-");
+    printf("\n| Oracle    | 1                    | 2488000000           | 31.1              |\n");
+    for (int i = 0; i < wigth; i++)
+        printf("-");
+    printf("\n| IBM       | 3                    | 2392000000           | 29.9              |\n");
+    for (int i = 0; i < wigth; i++)
+        printf("-");
+    printf("\n| Microsoft | 2                    | 1048000000           | 13.1              |\n");
+    for (int i = 0; i < wigth; i++)
+        printf("-");
+    printf("\n| Примечание: по данным Gartner Group за 1999г                                |\n");
+    for (int i = 0; i < wigth; i++)
+        printf("-");
+    printf("\n");
+
+
+
+        return 0;
+}
