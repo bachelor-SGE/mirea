@@ -1,0 +1,34 @@
+#define _CRT_SECURE_NO_WARNINGS 1 // Отключение предупреждения C4996
+
+#include <stdio.h>
+#include <math.h>
+#include <iostream>
+#include <windows.h>
+
+using namespace std;
+
+int main()
+{
+    
+    // Ввод параметров x, y и z с клавиатуры
+    double x, y, z;
+    printf("Введите значение x: ");
+    scanf("%lf", &x);
+    printf("Введите значение y: ");
+    scanf("%lf", &y);
+    printf("Введите значение z: ");
+    scanf("%lf", &z);
+
+    // Вычисление значения функции
+    double absolute_difference = fabs(x - y);
+    double power_term = pow(absolute_difference, x + y);
+    double arctan_term = atan(x) + atan(z);
+    double sixth_power = pow(x, 6);
+    double log_squared = pow(log(y), 2);
+    double result = exp(absolute_difference) * power_term / arctan_term + sixth_power + cbrt(log_squared);
+
+    // Вывод результата
+    printf("Значение функции f: %lf\n", result);
+
+    return 0;
+}
